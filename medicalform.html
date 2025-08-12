@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Form</title>
+    <style>
+        body{
+            justify-items: center;
+            /* border: 2px solid black; */
+        }
+        h1{
+            color:lightseagreen;
+        }
+        h3{
+            color:lightseagreen;
+        }
+        footer{
+            background-color: lightseagreen;
+            width: 600px;
+            height:70px ;
+            padding: 5px;
+            padding-right: 30px;
+            text-align: end;
+        }
+        header{
+            background-color: lightseagreen;
+            width: 600px;
+            height:70px ;
+            padding: 10px;
+            padding-top: 1px;
+        }
+        .aside1{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <aside class="aside1">
+            <p><strong>JUlY 17, 2025</strong></p>
+        </aside>
+        <h4>
+            RAM AROGYA KENDRA <br>
+            MEDICAL CLINIC <br>
+            123 ANYWHERE ST, ANY CITY, ST 12345
+        </h4>       
+    </header>
+        <h1>PATIENT MEDICAL HISTORY FORM</h1>
+        <form action="">
+            <h3>PATIENT INFORMATION</h3>
+            <table border="2" cellspacing="0" cellpadding="5">
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name:&nbsp&nbsp&nbsp&nbsp</label>
+                        <input type="text" id="fullname" placeholder="Enter Fullname" required>
+                    </td>
+                    <td>
+                        <label for="phno">Phone Number:
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                        </label>
+                        <input type="tel" id="phno">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth:</label>
+                        <input type="date" name="" id="dob">
+                    </td>
+                    <td>
+                        <label for="mail">
+                            Email:&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                            &nbsp&nbsp&nbsp&nbsp
+                        </label>
+                        <input type="email" name="" id="mail">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="gender">Gender:&nbsp&nbsp&nbsp&nbsp
+                            &nbsp&nbsp&nbsp
+                        </label>
+                        <input type="checkbox" name="" id="gender">Male
+                        <input type="checkbox" name="" id="gender">Female
+                        <input type="checkbox" name="" id="gender">other
+                    </td>
+                    <td>
+                        <label for="econ">Emergency contact:</label>
+                        <input type="tel" name="" id="econ">
+                    </td>
+                </tr>
+            </table>
+            <h3>MEDICAL HISTORY</h3>
+            <ul>
+                <li>
+                    Do you have ant chronic illnesses? 
+                    <input type="checkbox" name="" id="">Yes
+                    <input type="checkbox" name="" id="">No  
+                    (if yes,please specify)<br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Have you had any major surgeries? 
+                    <input type="checkbox" name="" id="">Yes
+                    <input type="checkbox" name="" id="">No
+                    (if yes,please specify)<br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Are you currently taking any medications?? 
+                    <input type="checkbox" name="" id="">Yes
+                    <input type="checkbox" name="" id="">No <br><br>
+                </li>
+                <li>
+                    Do you have ant alergies? 
+                    <input type="checkbox" name="" id="">Yes
+                    <input type="checkbox" name="" id="">No 
+                    (if yes,please specify)<br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+            </ul>
+            
+            <h3>FAMILY MEDICAL HISTORY</h3>
+            <ul>
+                <li>
+                    Do any of your immediate family members have a history of the following? <br><br>
+                    <input type="checkbox" name="" id="" class="family">Heart disease &nbsp&nbsp
+                    <input type="checkbox" name="" id="" class="family">High blood pressure &nbsp&nbsp
+                    <input type="checkbox" name="" id="" class="family">Diabetes &nbsp&nbsp
+                    <input type="checkbox" name="" id="" class="family">Cancer <br><br>
+                    <input type="checkbox" name="" id="">Others: <br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+            </ul>
+            <h3>REASON FOR TODAY'S VISIT</h3>
+            <ul>
+                <li>
+                    Symptoms/Concerns: <br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Duration of Symptoms: <br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Previous Treatments (if any): <br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+            </ul>
+            <h3>DOCTOR'S NOTES</h3>
+            <ul>
+                <li>
+                    Initial Assessment: <br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Recommended Tests/Treatments: <br><br>
+                    <textarea name="" id="" cols="75" rows="1"></textarea>
+                </li>
+                <li>
+                    Follow-up Appointment:
+                    <input type="checkbox" name="" id="">Yes
+                    <input type="checkbox" name="" id="">No &nbsp
+                    <label for="date">Date:</label>
+                    <input type="date" name="" id="date">
+                </li>
+            </ul>
+        </form>
+        <center>
+        <input type="submit" value="Submit"><br><br>
+        </center>
+        <footer>
+                <h4>
+                    <i>
+                        Bobbadi Seetharam<br>Doctor
+                    </i>
+                </h4>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Medical Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+    }
+    .container {
+      max-width: 800px;
+      margin: auto;
+      padding: 15px;
+      background: white;
+    }
+    header, footer {
+      background-color: lightseagreen;
+      color: white;
+      padding: 15px;
+    }
+    header h4, footer h4 {
+      margin: 5px 0;
+    }
+    .aside1 {
+      text-align: right;
+      font-weight: bold;
+    }
+    h1, h3 {
+      color: lightseagreen;
+    }
+    form table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    form table td {
+      padding: 10px;
+      vertical-align: top;
+    }
+    label {
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    textarea {
+      width: 100%;
+      padding: 8px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    textarea {
+      resize: vertical;
+    }
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+    .submit-btn {
+      text-align: center;
+      margin-top: 20px;
+    }
+    input[type="submit"] {
+      padding: 10px 20px;
+      background-color: lightseagreen;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #218f8f;
+    }
+
+    @media (max-width: 600px) {
+      .aside1 {
+        text-align: left;
+      }
+      form table, form table tr, form table td {
+        display: block;
+        width: 100%;
+      }
+      input[type="checkbox"] {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="aside1">JULY 17, 2025</div>
+      <h4>
+        RAM AROGYA KENDRA <br />
+        MEDICAL CLINIC <br />
+        123 ANYWHERE ST, ANY CITY, ST 12345
+      </h4>
+    </header>
+
+    <h1>PATIENT MEDICAL HISTORY FORM</h1>
+    <form>
+      <h3>PATIENT INFORMATION</h3>
+      <table>
+        <tr>
+          <td>
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" placeholder="Enter Fullname" required />
+          </td>
+          <td>
+            <label for="phno">Phone Number:</label>
+            <input type="tel" id="phno" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" />
+          </td>
+          <td>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label>Gender:</label><br />
+            <input type="checkbox" id="gender-m" />Male
+            <input type="checkbox" id="gender-f" />Female
+            <input type="checkbox" id="gender-o" />Other
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="econ">Emergency Contact:</label>
+            <input type="tel" id="econ" />
+          </td>
+        </tr>
+      </table>
+
+      <h3>MEDICAL HISTORY</h3>
+      <ul>
+        <li>
+          Do you have any chronic illnesses?
+          <input type="checkbox" />Yes <input type="checkbox" />No <br />
+          (If yes, please specify) <br />
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Have you had any major surgeries?
+          <input type="checkbox" />Yes <input type="checkbox" />No <br />
+          (If yes, please specify) <br />
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Are you currently taking any medications?
+          <input type="checkbox" />Yes <input type="checkbox" />No
+        </li>
+        <li>
+          Do you have any allergies?
+          <input type="checkbox" />Yes <input type="checkbox" />No <br />
+          (If yes, please specify) <br />
+          <textarea rows="2"></textarea>
+        </li>
+      </ul>
+
+      <h3>FAMILY MEDICAL HISTORY</h3>
+      <ul>
+        <li>
+          Immediate family history:
+          <br />
+          <input type="checkbox" />Heart disease
+          <input type="checkbox" />High blood pressure
+          <input type="checkbox" />Diabetes
+          <input type="checkbox" />Cancer <br />
+          <input type="checkbox" />Others <br />
+          <textarea rows="2"></textarea>
+        </li>
+      </ul>
+
+      <h3>REASON FOR TODAY'S VISIT</h3>
+      <ul>
+        <li>
+          Symptoms/Concerns:
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Duration of Symptoms:
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Previous Treatments (if any):
+          <textarea rows="2"></textarea>
+        </li>
+      </ul>
+
+      <h3>DOCTOR'S NOTES</h3>
+      <ul>
+        <li>
+          Initial Assessment:
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Recommended Tests/Treatments:
+          <textarea rows="2"></textarea>
+        </li>
+        <li>
+          Follow-up Appointment:
+          <input type="checkbox" />Yes
+          <input type="checkbox" />No
+          <label for="date">Date:</label>
+          <input type="date" id="date" />
+        </li>
+      </ul>
+
+      <div class="submit-btn">
+        <input type="submit" value="Submit" />
+      </div>
+    </form>
+
+    <footer>
+      <h4><i>Bobbadi Seetharam<br />Doctor</i></h4>
+    </footer>
+  </div>
+</body>
+</html>
